@@ -38,7 +38,7 @@ let taskJS = {
 			const squares = 			document.querySelectorAll('.square');
 			if (this.classList.contains('enabled')) {
 				for (let i = 0; i < squares.length; i++) {
-					squares[i].style.borderWidth =  '';
+					squares[i].style.borderWidth =  '0px';
 					localStorage.setItem('sqr_' + i + '_style', squares[i].style.cssText);
 				}
 				this.classList.remove('enabled');
