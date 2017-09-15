@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Squares</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="body-wrapper">
+
+
+<main id="main">
+    <div class="btn_container"></div>
+    <div class="square_container"></div>
+    <ul class="caption">
+    	<li>Исходные данные в файле <strong>json</strong>.
+    		<ul>
+    			<li><strong>Load Data</strong> - загружает <strong>json</strong></li>
+    			<li><strong>Draw Squares</strong> - рисует квадраты по заданным <span title="проиграть его таким образом, чтобы не зависимо сколько вложений будет в массиве вывело каждый цвет в виде квадрата (массив может меняться на типовой, но при этом алгоритм должен работать. многомерность может быть более глубокой)">условиям</span></li>
+    			<li><strong>Clear All</strong> - очищает поле</li>
+    		</ul>
+    	</li>
+    	<li>После отрисовки квадратов доступны следующие кнопки
+    		<ul>
+    			<li><strong>Enable Border</strong> - рисует границу квадратам по заданным <span title="Все квадраты имеют бордер, который равен по ширине значению ключа в массиве, но при этом общая ширина квадратов одинаковая, при клике на квадрат он становится с бордером х3. общая ширина квадрата остается такой же. при повторном клике возвращается в предыдущее состояние">условиям</span></li>
+    			<li><strong>Repaint Squares</strong> - перекрашивает квадраты по заданным <span title="Если ключ у цвета четный, то делаем значением цвета в бордер, если нечетный, то в бэкграунд">условиям</span></li>
+    			<li><strong>Drop Squares</strong> - каждый четвертый квадрат будет с новой строки</li>
+    			<li><strong>Add Shadow</strong> - каждый второй квадрат получает тень</li>
+    			<li><strong>Sort</strong> - сортировка квадратов согласно <span title="делаем кнопку, при клике по ней первый раз квадраты упорядочиваются по значению ключа, еще раз – в обратном порядке, еще раз – в изначальном порядке">условиям</span></li>
+    		</ul>
+    	</li>
+    	<li>Дополнительные условия
+    		<ul>
+    			<li><strong>Hover Effect</strong> - эффекты при наведении согласно <span title="при наведении на квадрат он крутится, предыдущий желтеет, а следующий полупрозрачный. Реализовано через JS">условиям</span></li>
+    			<li><strong>Local Storage</strong> - работает local storage согласно <span title="при перезагрузке страницы сострояние квадратов должно сохраняться (на сервер ничего отправляем, предпочтительнее решение через LocalStorage)">условиям</span></li>
+    		</ul>
+    	</li>
+    </ul>
+</main>
+</div>
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/js/libs/jquery/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="js/yurataskJS.js"></script>
+</body>
+</html>
